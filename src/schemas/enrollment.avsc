@@ -1,0 +1,35 @@
+{
+    "namespace": "order_service",
+    "type": "record",
+    "name": "EnrollmentEvent",
+    "fields": [
+        {
+            "name": "eventType",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "userId",
+            "type": "string"
+        },
+        {
+            "name": "courseId",
+            "type": "string"
+        },
+        {
+            "name": "orderId",
+            "type": "string"
+        },
+        {
+            "name": "enrolledAt",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        }
+    ]
+} 

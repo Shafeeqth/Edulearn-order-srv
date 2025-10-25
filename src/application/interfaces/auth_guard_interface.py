@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class AuthGuardInterface(ABC):
+class IAuthGuard(ABC):
     @abstractmethod
     async def validate_token(self, token: str) -> dict:
         pass

@@ -3,7 +3,7 @@ from typing import Optional, Any, AsyncContextManager
 
 from redis.asyncio import client
 
-class RedisInterface(ABC):
+class IRedisService(ABC):
     @property
     @abstractmethod
     def client(self) -> client.Redis:

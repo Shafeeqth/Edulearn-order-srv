@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional
 import structlog
 
-class LoggingInterface(ABC):
+class ILoggingService(ABC):
     @abstractmethod
     def get_logger(self, name: str) -> "structlog.stdlib.BoundLogger":
         pass

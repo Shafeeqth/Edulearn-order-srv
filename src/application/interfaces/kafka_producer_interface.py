@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
 from fastavro.types import Schema
 
-class KafkaProducerInterface(ABC):
+class IKafkaProducer(ABC):
     @abstractmethod
-    async def publish_event(self, topic: str, event: dict, schema: Schema) -> None:
+    async def publish_event(self, topic: str, event: dict, schema: Schema | None) -> None:
         pass
     
     @abstractmethod
