@@ -1,0 +1,31 @@
+{
+    "namespace": "order_service",
+    "type": "record",
+    "name": "DLQEvent",
+    "fields": [
+        {
+            "name": "eventType",
+            "type": "string"
+        },
+        {
+            "name": "originalTopic",
+            "type": "string"
+        },
+        {
+            "name": "originalMessage",
+            "type": "string"
+        },
+        {
+            "name": "error",
+            "type": "string"
+        },
+        {
+            "name": "failedAt",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        }
+    ]
+} 

@@ -1,0 +1,80 @@
+{
+    "namespace": "payment_service",
+    "type": "record",
+    "name": "PaymentEvent",
+    "fields": [
+        {
+            "name": "eventType",
+            "type": "string"
+        },
+        {
+            "name": "payment_id",
+            "type": "string"
+        },
+        {
+            "name": "userId",
+            "type": "string"
+        },
+        {
+            "name": "orderId",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": {
+                "type": "record",
+                "name": "Money",
+                "fields": [
+                    {
+                        "name": "amount",
+                        "type": "long"
+                    },
+                    {
+                        "name": "currency",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "transactionId",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "paymentMethod",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "processedAt",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "error",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        }
+    ]
+}

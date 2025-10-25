@@ -1,0 +1,56 @@
+{
+    "namespace": "order_service",
+    "type": "record",
+    "name": "SessionEvent",
+    "fields": [
+        {
+            "name": "eventType",
+            "type": "string"
+        },
+        {
+            "name": "sessionId",
+            "type": "string"
+        },
+        {
+            "name": "userId",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": {
+                "type": "record",
+                "name": "Money",
+                "fields": [
+                    {
+                        "name": "amount",
+                        "type": "long"
+                    },
+                    {
+                        "name": "currency",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "createdAt",
+            "type": "string"
+        },
+        {
+            "name": "updatedAt",
+            "type": "string"
+        },
+        {
+            "name": "version",
+            "type": "int"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        }
+    ]
+} 

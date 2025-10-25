@@ -1,0 +1,59 @@
+{
+    "namespace": "order_service",
+    "type": "record",
+    "name": "OrderEvent",
+    "fields": [
+        {
+            "name": "eventType",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "userId",
+            "type": "string"
+        },
+        {
+            "name": "courseIds",
+            "type": {
+                "type": "array",
+                "items": "string"
+            }
+        },
+        {
+            "name": "totalAmount",
+            "type": {
+                "type": "record",
+                "name": "Money",
+                "fields": [
+                    {
+                        "name": "amount",
+                        "type": "long"
+                    },
+                    {
+                        "name": "currency",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "createdAt",
+            "type": "string"
+        },
+        {
+            "name": "updatedAt",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "string"
+        }
+    ]
+}
