@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class MetricsInterface(ABC):
+class IMetricsService(ABC):
     @abstractmethod
     def setup_metrics(self) -> None:
         pass
